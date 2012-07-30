@@ -5,6 +5,10 @@
 function pageHandler(page){
 
   console.log(page);
+  
+  $('#nav').find('a').removeClass('active');
+  $('#nav').find('a[href=#'+page+']').addClass('active');
+
   $('div.page').hide();
   $('#' + page).show();
 
