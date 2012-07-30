@@ -1,3 +1,12 @@
+require 'tumblargh'
+require 'middleman/features/tumblargh'
+
+#activate :tumblargh
+
+#set_tumblr_api_key 'A4CaISHRGSLM9rb3SxA6IJ6pI3oi6fTqbAJaUqxDTkLobhhgom' # This is your OAuth consumer key
+#set_tumblr_blog 'samuelcotterall.tumblr.com'
+
+#
 ### 
 # Compass
 ###

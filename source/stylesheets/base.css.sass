@@ -5,9 +5,10 @@ $column-width: 68
 $gutter-width: 12
 $border-color: #2c2c2c
 $color-primary: #000 
+$color-contrast: #a5322e 
 
 @mixin body-copy
-  font-family: "mplus-1m", monospace 
+  font-family: "anonymous-pro", monospace 
 
 @mixin headings
   font-family: "futura-pt", sans-serif
@@ -57,6 +58,8 @@ body
             padding: 6px 0
             margin: 0 12px
             display: block
+          .active
+            color: $color-contrast 
     #content
       padding: 24px 0
     #footer
@@ -64,6 +67,7 @@ body
       border-top: 1px solid $border-color
     
   
-
+#header.info
+  padding: 0
   
 	
