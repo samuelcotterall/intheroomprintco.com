@@ -4,14 +4,13 @@
 
 function pageHandler(page){
 
-  console.log(page);
+ // console.log(page);
   
   $('#nav').find('a').removeClass('active');
   $('#nav').find('a[href=#'+page+']').addClass('active');
 
   $('div.page').hide();
   $('#' + page).show();
-
 }
 
 
@@ -50,6 +49,7 @@ $(document).ready(function(){
   $("#nav").find('a').click(function(){
     hashChange($(this).attr('href'));
     window.location.hash = $(this).attr('href');
+    window.scrollTo(0,0);
     return false;
   });
 

@@ -1,4 +1,4 @@
 source :rubygems
 
-gem "middleman", "~>3.0.0.rc.1"
-gem 'tumblargh'
+gem "middleman", :git => "https://github.com/middleman/middleman.git"
+gem 'tumblargh', :git => "https://github.com/jasonwebster/tumblargh.git", :branch => "mm-3"

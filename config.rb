@@ -1,5 +1,4 @@
-require 'tumblargh'
-require 'middleman/features/tumblargh'
+#require 'middleman/features/tumblargh'
 
 #activate :tumblargh
 
