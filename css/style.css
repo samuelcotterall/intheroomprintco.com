@@ -1,48 +1,46 @@
-/* line 18, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 17, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 h1, h2, h3, h4, h5 {
-  font-family: "futura-pt", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
 }
 
-/* line 21, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 20, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 a {
   color: black;
 }
 
-/* line 24, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 23, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body {
   font-family: "Courier", "Courier New", monospace;
   font-size: 16px;
   line-height: 1.5;
   margin: auto;
 }
-/* line 29, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 28, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body #container {
   background: white;
   padding: 24px;
   margin: auto;
   width: 252px;
 }
-/* line 34, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 33, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body #container #header {
-  font-family: "futura-pt", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   border-bottom: 1px solid #2c2c2c;
   text-align: center;
 }
-/* line 38, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 37, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body #container #header #logo {
   margin: 0 0 24px 0;
 }
-/* line 40, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 39, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body #container #header #logo img {
   width: 100%;
   display: block;
   margin: auto;
 }
-/* line 44, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 43, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body #container #header p {
   font-family: "Courier", "Courier New", monospace;
   letter-spacing: 1px;
@@ -53,7 +51,7 @@ body #container #header p {
   display: inline-block;
   width: auto;
 }
-/* line 53, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 52, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body #container #header #nav {
   margin-top: 24px;
   clear: both;
@@ -61,7 +59,7 @@ body #container #header #nav {
   line-height: 24px;
   background: black;
 }
-/* line 59, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 58, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body #container #header #nav ul {
   margin: 0;
   padding: 0;
@@ -83,7 +81,7 @@ body #container #header #nav ul li {
   *display: inline;
   white-space: nowrap;
 }
-/* line 62, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 61, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body #container #header #nav ul a {
   color: white;
   text-decoration: none;
@@ -91,38 +89,38 @@ body #container #header #nav ul a {
   margin: 0 12px;
   display: block;
 }
-/* line 68, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 67, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body #container #header #nav ul .active {
   color: #a5322e;
 }
-/* line 70, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 69, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body #container #content {
   padding: 24px 0;
   clear: both;
 }
-/* line 73, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 72, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body #container #content .post {
   padding-bottom: 24px;
 }
-/* line 76, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 75, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body #container #content .post .media img {
   margin: auto;
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
 }
-/* line 81, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 80, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body #container #content .post .footer, body #container #content .post .copy, body #container #content .post .source_url {
   display: none;
 }
-/* line 83, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 82, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 body #container #footer {
   clear: both;
   padding: 24px 0;
   border-top: 1px solid #2c2c2c;
 }
 
-/* line 89, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
+/* line 88, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/base.sass */
 #header.info {
   padding: 0;
 }
@@ -153,24 +151,50 @@ body #container #footer {
   }
   /* line 10, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
   body #container #header div {
+    float: left;
+    clear: both;
+    width: 100%;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
   }
-  /* line 13, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+  /* line 16, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
   body #container #header div p {
     border: 0;
     float: left;
+    clear: none;
+    margin: 8px;
+    padding: 0;
+    line-height: 24px;
   }
-  /* line 16, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+  /* line 23, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
   body #container #header div #nav {
     float: right;
+    clear: none;
+    background: transparent;
+    margin: 8px;
   }
-  /* line 19, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+  /* line 28, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+  body #container #header div #nav ul {
+    height: 24px;
+  }
+  /* line 30, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+  body #container #header div #nav ul li {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0;
+  }
+  /* line 34, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+  body #container #header div #nav ul li a {
+    color: black;
+    margin: 0 0 0 24px;
+    padding: 0;
+  }
+  /* line 39, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
   body #container #content #blog {
     width: 736px;
     float: left;
   }
-  /* line 22, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+  /* line 42, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
   body #container #content .post {
     padding: 0 24px 24px 0;
     max-width: 344px;
