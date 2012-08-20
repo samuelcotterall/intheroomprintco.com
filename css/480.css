@@ -1,0 +1,9 @@
+/* line 2, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/480.sass */
+body {
+  background: url(../images/background.jpg) top center no-repeat;
+  background-attachment: fixed;
+}
+/* line 5, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/480.sass */
+body #container {
+  width: 344px;
+}

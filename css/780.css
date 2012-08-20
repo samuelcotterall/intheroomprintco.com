@@ -1,0 +1,38 @@
+/* line 1, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+body {
+  padding: 48px 0;
+}
+/* line 3, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+body #container {
+  width: 712px;
+}
+/* line 8, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+body #container #header #logo img {
+  width: 344px;
+}
+/* line 10, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+body #container #header div {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+/* line 13, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+body #container #header div p {
+  border: 0;
+  float: left;
+}
+/* line 16, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+body #container #header div #nav {
+  float: right;
+}
+/* line 19, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+body #container #content #blog {
+  width: 736px;
+  float: left;
+}
+/* line 22, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+body #container #content .post {
+  padding: 0 24px 24px 0;
+  max-width: 344px;
+  float: left;
+  clear: none;
+}
