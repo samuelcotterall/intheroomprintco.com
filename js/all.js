@@ -3,8 +3,6 @@
 //
 
 function pageHandler(page){
-
- // console.log(page);
   
   $('#nav').find('a').removeClass('active');
   $('#nav').find('a[href=#'+page+']').addClass('active');
@@ -19,8 +17,8 @@ function hashChange(href){
   if (!href){
     href = window.location.hash;
   }
-
-  if (href === "#blog" || window.location.pathname.replace(/^\/([^\/]*).*$/, '$1') === "page"){
+  
+  if (href === "#blog"){
     pageHandler('blog');
   } else if (href === "#contact") {
     pageHandler('contact');
@@ -29,11 +27,18 @@ function hashChange(href){
   } else {
     pageHandler('home');
   }
+  
 }
 
 $(window).load(function(){
 
   hashChange();
+
+  // If we are on a `/page/` show #blog
+  if (window.location.pathname.replace(/^\/([^\/]*).*$/, '$1') === "page") {
+    pageHandler('blog');
+  }
+
 
 });
 

@@ -51,11 +51,15 @@ body #container #header div #nav ul li a {
   padding: 0;
 }
 /* line 39, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+body #container #content #home {
+  padding: 0 24px;
+}
+/* line 41, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
 body #container #content #blog {
   width: 736px;
   float: left;
 }
-/* line 42, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
+/* line 44, /Users/samuelcotterall/Sites/intheroomprintco.com/sass/780.sass */
 body #container #content .post {
   padding: 0 24px 24px 0;
   max-width: 344px;

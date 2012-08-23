@@ -1,37 +1,269 @@
----
-title: In The Room Print Co. 
----
 
-<div id="home" class="page">
+<!doctype html>
+<html>
+  <head>
+    
+    <!--[if lt IE 9]>
+      <script src="http://dl.dropbox.com/u/12425/sites/intheroomprintco.com/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>In The Room Print Co.</title>
+    
+    <link href="http://dl.dropbox.com/u/12425/sites/intheroomprintco.com/css/normalize.css" media="screen" rel="stylesheet" type="text/css" />
+    	<link href="http://dl.dropbox.com/u/12425/sites/intheroomprintco.com/css/base.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="http://dl.dropbox.com/u/12425/sites/intheroomprintco.com/css/style.css" media="(min-width:320px)" rel="stylesheet" type="text/css" />
+
+    <!--[if (lt IE 9) & (!IEMobile)]>
+      <link href="http://dl.dropbox.com/u/12425/sites/intheroomprintco.com/css/ie.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+     
+     <script src="http://dl.dropbox.com/u/12425/sites/intheroomprintco.com/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="http://dl.dropbox.com/u/12425/sites/intheroomprintco.com/js/all.js" type="text/javascript"></script>
+    
+    <script type="text/javascript" src="http://use.typekit.com/fte2jpe.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>   
+
+  </head>
+  
+  <body class="index">
+
+    <div id="container">
+
+      <header id="header">
+      <h1 id="logo"><a href="/"><img src="http://dl.dropbox.com/u/12425/sites/intheroomprintco.com/images/logo.png" /></a></h1>
+      <div>
+      <p>Bespoke Hand-Printed Merchandise</p>
+        <nav id="nav">
+          <ul>
+            <li><a href="#home">Home</a></li>    	  
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      </header><!-- /#header -->
+
+      <div id="content">
+        <div id="home" class="page">
   <article>
-    <p>In the Room Print Co. have been supplying shops, bands and record labels with high quality hand-printed t-shirts, tote bags, posters, record sleeves, badges and stickers since 2010. We can print up humble 1 colour runs through to 6 colour giganto-mega orders and like to tackle each job with the love and enthusiasm that your design deserves, all with a lightning-paced turnaround.</p> 
-    <p>Based in Liverpool, UK, we formed our business after printing up t-shirts for our own band and were soon asked to provide the same service for friends and folks we met on the road. As we enter our third year of business we’re happy to boast a client list including record labels Moshi Moshi and Witchita, bands such as Maximo Park, Frankie and the Heartstrings, Mugstar and Slow Club and European Skateshop of the Year; Liverpool’s Lost Art.</p>
-    <p>Alongside our top-class printing, we also offer a design service.</p>
+  <p>We are Paul and Alasdair.  We provide hand-pulled screen printed t-shirts, bags, hoodies, sweatshirts and posters for bands, record labels and shops.</p>
+  <p>From humble small one colour runs to six colour giganto mega-orders, we can deliver a lightning-paced turnaround at ultra-competitive prices. Just email us with details of your order and we&#x27;ll send over your quote.</p>
+  <p>Take a look at our blog for examples of our work, and let us know if you have any questions about what it is we do.</p>
+  <p>We can also supply stickers, badges, bass drum heads and offer custom packages for touring bands, as well as a popular in-house design service.</p>
+  <p>Working with (amongst others): Lost Art Skate Shop, Witchita Records, Slow Club, Moshi Moshi Records, Frankie &amp; the Heartstrings, Belly Kids, Maximo Park, Liverpool Sound City, Mugstar, Outfit, Blueprint Skateboards, Screenadelica, Rock Action Records and The Double Negative.</p>
+  <p>By the way, we bring our dogs to work and have little restraint in photographing their every move.</p>
   </article>
 </div><!-- /#home -->
 
 <div id="blog" class="page">
-  BLOG
+            {block:Posts}
+                <div class="post">
+                    
+                    {block:Photo}
+                        <div class="media">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}</div>
+                        {block:Caption}<div class="copy">{Caption}</div>{/block:Caption}
+                    {/block:Photo}
+                    
+                    {block:Video}
+                        <div class="media">{Video-500}</div>
+                        {block:Caption}<div class="copy">{Caption}</div>{/block:Caption}
+                    {/block:Video}
+                    
+                    {block:Audio}
+                        
+                        {block:AudioEmbed}
+                            {AudioEmbed}
+                        {/block:AudioEmbed}
+                        
+                        {block:AudioPlayer}
+                            {block:IfShowAlbumArtOnAudioPosts}
+                                {block:AlbumArt}
+                                    <div class="album_art">
+                                        <img src="{AlbumArtURL}" alt="{block:Artist}{Artist}{/block:Artist}{block:TrackName} - {TrackName}{/block:TrackName}" style="margin-bottom:10px;" />
+                                    </div>
+                                {/block:AlbumArt}
+                            {/block:IfShowAlbumArtOnAudioPosts}
+                        
+                            <div class="audio">
+                                <div class="player">{AudioPlayerWhite}</div>
+                                <div class="meta">{block:PlayCount}{PlayCountWithLabel}{/block:PlayCount}{block:ExternalAudio}<span class="download_external_audio"> &bull; <a href="{ExternalAudioURL}">{lang:Download}</a></span>{/block:ExternalAudio}</div>
+                                <div class="clear"></div>
+                            </div>
+                        {/block:AudioPlayer}
+                        
+                        <div class="clear"></div>
+                        
+                        {block:Caption}<div class="copy">{Caption}</div>{/block:Caption}
+                        
+                    {/block:Audio}
+                    
+                    {block:Quote}
+                        <div class="quote {Length}">{Quote}</div>
+                        <div class="copy">
+                            <div class="quotebg">“</div>
+                            {block:Source}
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td valign="top" style="width:20px;">&mdash;</td>
+                                        <td valign="top" class="quote_source">
+                                            {Source}
+                                        </td>
+                                    </tr>
+                                </table>
+                            {/block:Source}
+                        </div>
+                    {/block:Quote}
+                        
+                    {block:Text}
+                        {block:Title}<div class="title">{Title}</div>{/block:Title}
+                        <div class="copy">{Body}</div>
+                    {/block:Text}
+                    
+                    {block:Answer}
+                        <div class="question">
+                            <div class="nipple"></div>
+                            {Question}
+                        </div>
+                        <div class="asker_container"><img src="{AskerPortraitURL-24}">{Asker}</div>
+                        <div class="copy">{Answer}</div>
+                    {/block:Answer}
+                    
+                    {block:Chat}
+                        {block:Title}<div class="title">{Title}</div>{/block:Title}
+                        <div class="chat">
+                            <div class="lines">
+                                {block:Lines}
+                                    <div class="line {Alt}">{block:Label}<strong>{Label}</strong>{/block:Label} {Line}</div>
+                                {/block:Lines}
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div style="height:10px;"></div>
+                    {/block:Chat}
+                    
+                    {block:Link}
+                        <div class="link"><a href="{URL}" {Target}>{Name} &raquo;</a></div>
+                        {block:Description}<div class="copy">{Description}</div>{/block:Description}
+                    {/block:Link}
+                    
+                    {block:Date}
+                        <a href="{Permalink}">
+                            <div class="footer for_permalink">
+                                <div class="date">
+                                    {block:Reblog}
+                                        {lang:Reblogged TimeAgo from ReblogParentName} {block:RebloggedFromReblog}(<span style="text-transform:lowercase;">{lang:Originally from ReblogRootName}</span>){/block:RebloggedFromReblog}
+                                    {/block:Reblog}
+                                    
+                                    {block:NotReblog}
+                                        {lang:Posted TimeAgo from source}
+                                    {/block:NotReblog}
+                                </div>
+                                <div class="notes">{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount} {block:IfDisqusShortname}{block:NoteCount}&bull;{/block:NoteCount} <a href="{Permalink}#disqus_thread">{lang:View comments}</a>{/block:IfDisqusShortname}</div>
+                                <div class="clear"></div>
+                            </div>
+                        </a>
+                    {/block:Date}
+                    
+                    <div class="footer {block:ContentSource}with_source_url{/block:ContentSource}" style="
+                        display:none;
+                        {block:IfShowTags}{block:HasTags}display:block;{/block:HasTags}{/block:IfShowTags}
+                        {block:ContentSource}display:block;{/block:ContentSource}
+                    ">
+                        {block:IfShowTags}
+                            {block:HasTags}<div class="tags">{lang:Tagged}: {block:Tags}<a href="{TagURL}">{Tag}</a><span class="tag-commas">, </span>{/block:Tags}.</div>{/block:HasTags}
+                        {/block:IfShowTags}
+                        
+                        {block:ContentSource}
+                            <a href="{SourceURL}" class="source_url">
+                                {lang:Source}:
+                                {block:SourceLogo}<img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />{/block:SourceLogo}
+                                {block:NoSourceLogo}{SourceTitle}{/block:NoSourceLogo}
+                            </a>
+                        {/block:ContentSource}
+                        
+                        <div class="clear"></div>
+                    </div>
+                    
+                    {block:PostNotes}<div class="notecontainer">{PostNotes}</div>{/block:PostNotes}
+                    
+                    {block:IfDisqusShortname}
+                        {block:Permalink}
+                            <div class="notecontainer" style="margin:20px 0 1px 0; padding:1px 10px 10px 10px;">
+                                <div id="disqus_thread"></div>
+                                <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+                                <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
+                            </div>
+                            <div style="text-align:right; margin-top:5px;">
+                                {lang:Blog comments powered by Disqus 2}
+                            </div>
+                        {/block:Permalink}
+                    {/block:IfDisqusShortname}
+                    
+                </div>
+                <div class="bottom"></div>
+            {/block:Posts}
+            
+            {block:Pagination}
+                <div id="navigation" {block:IfEnableJumpPagination}class="jump_pagination"{/block:IfEnableJumpPagination}>
+                    {block:PreviousPage}<a href="{PreviousPage}">&larr; {lang:Previous}</a>{/block:PreviousPage}
+                    
+                    {block:IfEnableJumpPagination}
+                        {block:JumpPagination length="5"}
+                            {block:CurrentPage}
+                                <span class="current_page">{PageNumber}</span>
+                            {/block:CurrentPage}
+                            
+                            {block:JumpPage}
+                                <a class="jump_page" href="{URL}">{PageNumber}</a>
+                            {/block:JumpPage}
+                            
+                        {/block:JumpPagination}
+                    {/block:IfEnableJumpPagination}
+                    
+                    {block:NextPage}<a href="{NextPage}">{lang:Next page} &rarr;</a>{/block:NextPage}
+                </div>
+            {/block:Pagination}
+
 </div><!-- /#blog-->
 
 <div id="contact" class="page">
   <article id="contact">
-    <div id="wufoo-z7x3p9">
-    Fill out my <a href="http://samuelcotterall.wufoo.com/forms/z7x3p9">online form</a>.
-    </div>
-    <script type="text/javascript">var z7x3p9;(function(d, t) {
-    var s = d.createElement(t), options = {
-    'userName':'samuelcotterall', 
-    'formHash':'z7x3p9', 
-    'autoResize':true,
-    'height':'497',
-    'async':true,
-    'header':'show'};
-    s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-    s.onload = s.onreadystatechange = function() {
-    var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-    try { z7x3p9 = new WufooForm();z7x3p9.initialize(options);z7x3p9.display(); } catch (e) {}};
-    var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-    })(document, 'script');</script>
+  <script type="text/javascript" src="http://form.jotformeu.com/jsform/22346406949359"></script>
   </article>
 </div><!-- /#contact -->
+
+      </div><!-- /#content -->
+
+      <footer id="footer">
+        Copyright &copy; 2012 In The Room Print Co.
+      </footer><!-- /#footer -->
+
+    </div><!-- /#container -->
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21435432-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+  </body>
+</html>
